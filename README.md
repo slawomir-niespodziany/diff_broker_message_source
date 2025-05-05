@@ -8,9 +8,9 @@ Compoennt *MessageSource* generates messages which intended to be sent to anothe
 ## Installation
 *It is recommended to build and run the whole demo app at once, by following the guide in *[broker](https://github.com/slawomir-niespodziany/diff_broker)* repo. If you only want to install this single component, then proceed with this document.*
 
-This component requires the interfaces it uses, to be available in CMake registry (already installed). Please, refer to the installation guides in *[iprocessable](https://github.com/slawomir-niespodziany/diff_broker_iprocessable)* and *[ilink](https://github.com/slawomir-niespodziany/diff_broker_ilink)* for reference.
+This component requires the interfaces it uses to be available in the local CMake registry. Please refer to the documentation of *[iprocessable](https://github.com/slawomir-niespodziany/diff_broker_iprocessable)* and *[ilink](https://github.com/slawomir-niespodziany/diff_broker_ilink)* for installation guides.
 
-Below commands can be run from within the component directory to build and install it in your local CMake registry.
+The following commands can be run from within the component directory. They build and install the component (along with its tests) in your local CMake registry.
 ```
 cmake -Bbuild -DCMAKE_EXPORT_PACKAGE_REGISTRY=ON
 cmake --build build
@@ -24,7 +24,7 @@ sudo snap install cmake --classic
 ```
 
 ## Testing
-The component can be tested out of context of the whole application. The following command can be executed from the component directory to run the prepared tests.
+The component can be tested in isolation from the whole application. The following command, executed from the component directory, runs the prepared tests.
 ```
 ctest --test-dir build/test/
 ```
