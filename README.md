@@ -17,7 +17,7 @@ cmake --build build
 ```
 
 ## Prerequisites
-The whole demo is prepared and tested under Ubuntu 22.04 and Ubuntu 24.04. With that being said, you should only need *gcc* and *cmake* to perform build and installation of this component. The recent versions (incl. *cmake 4.0.1*) are available under the following commands. 
+The whole demo had been prepared and tested on Ubuntu 22.04 and Ubuntu 24.04. That being said, you only need *gcc* and *cmake* to build and install this component. The recent versions (incl. *cmake 4.0.1*) can be downloaded using following commands. 
 ```
 sudo apt -y install build-essential
 sudo snap install cmake --classic
