@@ -8,23 +8,23 @@ Compoennt *MessageSource* generates messages which intended to be sent to anothe
 ## Installation
 *It is recommended to build and run the whole demo app at once, by following the guide in *[broker](https://github.com/slawomir-niespodziany/diff_broker)* repo. If you only want to install this single component, then proceed with this document.*
 
-This component requires the interfaces it uses, to be available in CMake registry (already installed). Please, refer to the installation guides in *[iprocessable](https://github.com/slawomir-niespodziany/diff_broker_iprocessable)* and *[ilink](https://github.com/slawomir-niespodziany/diff_broker_ilink)* for reference.
+This component requires the interfaces it uses to be available in the local CMake registry. Please refer to the documentation of *[iprocessable](https://github.com/slawomir-niespodziany/diff_broker_iprocessable)* and *[ilink](https://github.com/slawomir-niespodziany/diff_broker_ilink)* for installation guides.
 
-Below commands can be run from within the component directory to build and install it in your local CMake registry.
+The following commands can be run from within the component directory. They build and install the component (along with its tests) in your local CMake registry.
 ```
 cmake -Bbuild -DCMAKE_EXPORT_PACKAGE_REGISTRY=ON
 cmake --build build
 ```
 
 ## Prerequisites
-The whole demo is prepared and tested under Ubuntu 22.04 and Ubuntu 24.04. With that being said, you should only need *gcc* and *cmake* to perform build and installation of this component. The recent versions (incl. *cmake 4.0.1*) are available under the following commands. 
+The whole demo had been prepared and tested on Ubuntu 22.04 and Ubuntu 24.04. That being said, you only need *gcc* and *cmake* to build and install this component. The recent versions (incl. *cmake 4.0.1*) can be downloaded using following commands. 
 ```
 sudo apt -y install build-essential
 sudo snap install cmake --classic
 ```
 
 ## Testing
-The component can be tested out of context of the whole application. The following command can be executed from the component directory to run the prepared tests.
+The component can be tested in isolation from the whole application. The following command, executed from the component directory, runs the prepared tests.
 ```
-ctest --test-dir build/test/
+ctest --test-dir build/test
 ```
