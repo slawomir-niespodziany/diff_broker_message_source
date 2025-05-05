@@ -26,5 +26,5 @@ sudo snap install cmake --classic
 ## Testing
 The component can be tested in isolation from the whole application. The following command, executed from the component directory, runs the prepared tests.
 ```
-ctest --test-dir build/test/
+ctest --test-dir build/test
 ```
