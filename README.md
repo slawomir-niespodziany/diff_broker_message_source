@@ -22,3 +22,9 @@ The whole demo is prepared and tested under Ubuntu 22.04 and Ubuntu 24.04. With 
 sudo apt -y install build-essential
 sudo snap install cmake --classic
 ```
+
+## Testing
+The component can be tested out of context of the whole application. The following command can be executed from the component directory to run the prepared tests.
+```
+ctest --test-dir build/test/
+```
