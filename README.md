@@ -30,7 +30,7 @@ cmake --build build
 ```
 
 #### Test by hand
-Tests are run in isolation from other components. The following command, executed from component directory, runs the built tests.
+Tests are run in isolation from other components. Execute the following command from component directory to run them.
 ```
 ctest --test-dir build/test
 ```
