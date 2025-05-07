@@ -2,7 +2,7 @@
 This repo consists of component *MessageSource*. It is a part of example application *[broker](https://github.com/slawomir-niespodziany/diff_broker)* which demonstrates the use of *[diff](https://github.com/slawomir-niespodziany/diff)* framework. 
 
 ## Description
-*MessageSource* generates messages intended for sending to another system. It requires two *ILink* implementations: one as the primary link for sending generated messages and the other as a backup. 
+*MessageSource* generates messages intended for sending to another system. It requires two *ILink* implementations: one as the primary link for sending generated messages and the other as a backup. It implements *IProcessable* interface, to perform internal operations when called from executing thread.
 
 <p align="center"><a href="include/MessageSource.h"><img src="img/MessageSource.png" alt="MessageSource interface"/></a></p>
 
